@@ -6,6 +6,8 @@ Fabutil is a set of helpers for Fabric deployment. This package is designed to k
 
 * Automatic indenting of nested task output
 * Colored markers showing when a nested task is entered or exited
+* Helper tasks for Ubuntu systems
+* Helper tasks for Ruby and Rails deployments
 
 ## Installation
 
@@ -41,6 +43,8 @@ Now when we run the script we get the following output:
     >>> leaving bar
 
 This output can be very useful in debugging complex scripts with lots of task dependencies.
+
+Fabutil also comes with a variety of helper tasks. Consult the source code for more info about these.
 
 ## Caveats and known bugs
 
