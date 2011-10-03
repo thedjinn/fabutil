@@ -11,7 +11,7 @@ Fabutil is a set of helpers for Fabric deployment. This package is designed to k
 
 ## Installation
 
-Just run `pip install -e git+git://github.com/thedjinn/fabutil.git`.
+Just run `pip install fabutil` to get the latest version.
 
 ## Usage
 
