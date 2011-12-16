@@ -10,9 +10,10 @@ def task(*args, **kwargs):
     def myrun(self, *args, **kwargs):
         print green(">>> entering ") + green("%s" % func.__name__, True)
         indenter.push()
-        self.oldrun(*args, **kwargs)
+        result = self.oldrun(*args, **kwargs)
         indenter.pop()
         print green(">>> leaving ") + green("%s" % func.__name__, True)
+        return result
 
     def wrapper(func):
         t = tasks.WrappedCallableTask(func, *args, **kwargs)
